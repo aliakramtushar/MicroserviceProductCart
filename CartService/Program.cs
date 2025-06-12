@@ -9,9 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<CartDbContext>(opts =>
     opts.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<ICartRepository, CartRepository>();
-builder.Services.AddHttpClient<ProductClient>(c =>
+builder.Services.AddHttpClient<IProductClient, ProductClient>(client =>
 {
-    c.BaseAddress = new(builder.Configuration["ProductServiceUrl"]);
+    client.BaseAddress = new Uri(builder.Configuration["ProductServiceUrl"]!);
 });
 builder.Services.AddScoped<CartServiceImpl>();
 builder.Services.AddEndpointsApiExplorer();

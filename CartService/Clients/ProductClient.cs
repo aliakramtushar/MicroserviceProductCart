@@ -2,7 +2,7 @@
 
 namespace CartService.Clients
 {
-    public class ProductClient
+    public class ProductClient : IProductClient
     {
         private readonly HttpClient _http;
         private readonly string _baseUrl;

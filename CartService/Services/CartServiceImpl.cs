@@ -8,9 +8,9 @@ namespace CartService.Services
     public class CartServiceImpl
     {
         private readonly ICartRepository _repo;
-        private readonly ProductClient _pc;
+        private readonly IProductClient _pc;
 
-        public CartServiceImpl(ICartRepository repo, ProductClient pc)
+        public CartServiceImpl(ICartRepository repo, IProductClient pc)
         {
             _repo = repo;
             _pc = pc;

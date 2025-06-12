@@ -166,3 +166,4 @@ D:\Core web app\Microservice testing\ProductCartMicroservices\CartService\obj\De
 D:\Core web app\Microservice testing\ProductCartMicroservices\CartService\obj\Debug\net8.0\CartService.pdb
 D:\Core web app\Microservice testing\ProductCartMicroservices\CartService\obj\Debug\net8.0\CartService.genruntimeconfig.cache
 D:\Core web app\Microservice testing\ProductCartMicroservices\CartService\obj\Debug\net8.0\ref\CartService.dll
+D:\Core web app\Microservice testing\ProductCartMicroservices\CartService\obj\Debug\net8.0\CartService.sourcelink.json
